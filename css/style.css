@@ -118,8 +118,8 @@ a:active {
 }
 
 :root {
-  --webgl-iframe-height: 600px;
-  --webgl-iframe-width: 960px;
+  --webgl-iframe-height: 720px;
+  --webgl-iframe-width: 1240px;
 }
 
 #sim_bg_par
@@ -145,13 +145,6 @@ a:active {
 	background-position: 70% 0px;
 	z-index: -1;
 }
-
-/*@media (max-width : 800px) 
-{
-	#sim_bg { 
-		background-image: url("bg-mobile.jpg")
-	}
-}*/
 
 @media screen and (orientation : portrait) {
 	#sim_bg { 
@@ -195,17 +188,6 @@ a:link {
 a:hover {
     color: #a6afcb;
     text-decoration: none;
-}
-
-.madewith_apptittle{
-	font-size:40px;
-	font-weight: bold;
-	color: #ffe6cc
-}
-
-.madewith_app_badge_img{
-	width: 80%; 
-	max-width: 300px
 }
 
 .webgl-iframe-sizing {
