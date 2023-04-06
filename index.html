@@ -1,78 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Shift</title>
 
-    <title>Dragon Shift</title>
-
-    <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
-    <link href="css/css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
-
-    <link rel="shortcut icon" href="/index_files/favicon_32x32.png">
-
-    <!--meta name="viewport" content="width=768"-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="a Unity asset that optimizes and expands the functionality of a ScrollRect" />
-    <meta name="keywords" content="dragonshift, dragon, rpg, puzzle, online, multiplayer, adventure, rogue, roguelike, game, mobile, free-to-play"
-    />
-    <meta name="revisit-after" content="7 days">
-
-    <!--Open Graph tags-->
-    <meta property="og:url" content="http://dragonshift.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dragon Shift" />
-    <meta property="og:description" content="Combine strategy, cooperation, puzzle-solving and luck to come up with the ultimate escape plan, or use the brute force to defeat all other players" />
-    <!--meta property="og:image"         content="index_files/ch3oh7oxj.png" --/>
-	
-	<!--Open external links in new tabs-->
-    <base target="_blank">
-
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        <!--HTTP-->
-        gtag('config', 'UA-122583573-4');
-        <!--HTTPS-->
-        gtag('config', 'UA-122583573-5');
-    </script>
+  <link type="text/css" rel="stylesheet" href="css/includes.css" />
 </head>
 
 <body>
-    <div id="sim_bg_par">
-        <div id="sim_bg"></div>
+  <header class="header">
+    <div class="container">
+      <div class="col-12">
+        <a href="#">
+          <img src="images/menu.png" alt="" class="img-fluid">
+        </a>
+      </div>
     </div>
+  </header>
+  <section class="banner_wrapper">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <button type="submit" class="primary_button">Play Game</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <button type="submit" class="primary_button">Play Game</button>
 
-    <div id="webgl-iframe-parent-parent">
-        <div class="webgl-iframe-sizing webgl-iframe-parent">
-            <iframe id="webgl-iframe" class="webgl-iframe-sizing" scrolling="no"></iframe>
-            <button id="webgl-play-button">
-				Enter the world
-			</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <button type="submit" class="primary_button">Play Game</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <button class="primary_button">Play Game</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-img-section">
+      <img src="images/top-img.png" alt="" class="w-100">
+    </div>
+    <div class="left_menu_sticky">
+      <ul>
+        <li>
+          <a href="https://play.google.com/apps/internaltest/4699424592732528602
+                "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                    <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                  </svg></a>
+        </li>
+        <li>
+          <a href="https://beta.itunes.apple.com/v1/app/1592830964"><i class="bi bi-apple"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="bi bi-steam"></i></a>
+        </li>
+        <li>
+          <a href="https://play.dragonshift.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                  </svg></a>
+        </li>
+      </ul>
+    </div>
+    <div class="right_menu_sticky">
+      <ul>
+        <li>
+          <a href="https://discord.com/invite/pyU4UqT9dA"><i class="bi bi-discord"></i></a>
+        </li>
+        <li>
+          <a href="https://discord.com/invite/H5aJSwHn65"><svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9713 25.6567L17.5878 24.0096C20.289 23.2849 21.3431 21.4402 21.3431 21.4402C17.9172 24.6684 8.56177 24.8002 4.9382 21.4402C4.9382 21.4402 5.86056 23.1531 8.62765 24.0096L7.11234 25.6567C2.50052 25.5908 0.72168 22.4943 0.72168 22.4943C0.72168 15.6424 3.7523 10.1741 3.7523 10.1741C6.84881 8 9.68178 8 9.68178 8L9.87943 8.26353C6.05821 9.31766 4.41113 11.0306 4.41113 11.0306C8.89118 8 18.1148 8.26353 21.7384 11.0306C21.8043 10.9647 19.5642 9.1859 16.0724 8.26353L16.4019 8C16.4019 8 19.2348 8 22.3313 10.1741C22.3313 10.1741 25.362 15.6424 25.362 22.4943C25.362 22.4943 23.5831 25.5908 18.9713 25.6567ZM9.08886 20.5176C10.2896 20.5176 11.263 19.4852 11.263 18.2117C11.263 16.9382 10.2896 15.9058 9.08886 15.9058C7.88811 15.9058 6.91472 16.9382 6.91472 18.2117C6.91472 19.4852 7.88811 20.5176 9.08886 20.5176ZM18.9052 18.2117C18.9052 19.4852 17.9318 20.5176 16.731 20.5176C15.5303 20.5176 14.5569 19.4852 14.5569 18.2117C14.5569 16.9382 15.5303 15.9058 16.731 15.9058C17.9318 15.9058 18.9052 16.9382 18.9052 18.2117Z" fill="#F4D45D"/>
+                    <path d="M27.8847 4.9455L27.8801 4.9545C27.8983 4.806 27.9165 4.653 27.9165 4.5C27.9165 4.347 27.9029 4.203 27.8847 4.0545L27.8892 4.0635L29 3.1995L27.8938 1.3005L26.5873 1.8225L26.5918 1.827C26.3551 1.647 26.0956 1.494 25.8134 1.377H25.8179L25.6085 0H23.3915L23.1912 1.3815H23.1958C22.9135 1.4985 22.654 1.6515 22.4173 1.8315L22.4219 1.827L21.1108 1.3005L20 3.1995L21.1108 4.0635L21.1153 4.0545C21.0971 4.203 21.0835 4.347 21.0835 4.5C21.0835 4.653 21.0971 4.806 21.1199 4.9545L21.1153 4.9455L20.1593 5.688L20.0091 5.805L21.1153 7.695L22.4264 7.1775L22.4173 7.1595C22.6586 7.344 22.9181 7.497 23.2049 7.614H23.1912L23.3961 9H25.6039C25.6039 9 25.6176 8.919 25.6313 8.811L25.8042 7.6185H25.7997C26.0819 7.5015 26.346 7.3485 26.5873 7.164L26.5781 7.182L27.8892 7.6995L28.9954 5.8095C28.9954 5.8095 28.9317 5.7555 28.8452 5.6925L27.8847 4.9455V4.9455ZM24.4977 6.075C23.6191 6.075 22.9044 5.3685 22.9044 4.5C22.9044 3.6315 23.6191 2.925 24.4977 2.925C25.3763 2.925 26.091 3.6315 26.091 4.5C26.091 5.3685 25.3763 6.075 24.4977 6.075Z" fill="#F4D45D"/>
+                    </svg>
+                    </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@dragonshiftgame"><i class="bi bi-youtube"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/dragonshiftgame"><i class="bi bi-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="dragon_shift_wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 wow fadeInUp order-sm-2" data-wow-delay="0.3s">
+          <div class="border-p"><img src="images/demo-img.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-sm-6 desc order-sm-1">
+          <h3 class="title wow fadeInUp" data-wow-delay="0.3s"> DRAGON SHIFT</h3>
+          <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+          <div class="wow fadeInUp" data-wow-delay="0.5s">
+            <p>Embark on an epic adventure with DragonShift, a unique turn-based Fantasy-Adventure-RPG with hundreds of dungeons to explore, lots of puzzles, decision-driven campaigns and fun online modes that let you measure your skills with players from
+              around the world.</p>
+            <p class="text-left">DragonShift combines: </p>
+            <ul>
+              <li>The classic Fantasy-RPG experience</li>
+              <li>The shifting world map that spawns a new sub-genre in puzzle-RPG games</li>
+              <li>The unrepeatability of Chess</li>
+              <li>A sweet mix of Strategy and Luck</li>
+            </ul>
+            <a href="" class="read-more" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The world of DragonShift is a vast realm with grid-like dungeons filled with blocks, each of them hosting various game entities relevant to the gameplay. But what makes DragonShift truly unique is its shape-shifting dungeons, where you can move blocks
+                  around just like in a classic sliding puzzle. This means that every time you enter a dungeon, it's a new experience that will keep you guessing and strategizing every step of the way.
+                </p>
+                <p>Choose from 4 competitive game modes, each with their own set of rules and challenges</p>
+                <ul>
+                  <li>Dragon's Blood is the standard mode, where each level can have its own rules, with the Classic levels usually requiring you to either Escape or Eliminate others: you escape by collecting certain items (often the map, key, torch) and
+                    reaching an escape spot (which is usually guarded by a Dragon!); you eliminate other players by acquiring the 'Dragon's Blood', which allows you to perma-kill any character.</li>
+                  <li>In Sharpest Hour, the pace is faster and the leveling up is easier, making it perfect for a more casual style of play.</li>
+                  <li>Cutthroat is all about eliminating other players, with no respawning and only one goal in mind, match duration being even shorter than in Sharpest Hour.</li>
+                  <li>And in Darkest Hour, the Darkness Fog slowly devours everything in an area that grows with each passing day, giving you a limited amount of time to escape or eliminate others</li>
+                </ul>
+                <p>
+                  But that's not all - DragonShift also has an Adventure mode that takes you on a journey across hundreds of levels, each with its own unique challenges and rewards. Your decisions matter in this mode, so choose wisely and unlock rewards that can be used
+                  in competitive mode.</p>
+                <p>Whether you're playing solo or teaming up with others, DragonShift is an exciting and fun adventure that will keep you coming back for more!
+
+                </p>
+
+              </div>
+            </div>
+            <div class="top-img-section">
+              <img src="images/top-img.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="adventure_wrapper">
+    <div class="bottom-img-section">
+      <img src="images/bottom-img.png" alt="" class="w-100">
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="border-p"><img src="images/demo-img.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-sm-6 desc">
+          <h3 class="title wow fadeInUp" data-wow-delay="0.3s">ADVENTURE</h3>
+          <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+          <div class="wow fadeInUp" data-wow-delay="0.5s">
+            <p>Deep-dive into DragonShift’s lore in the Adventure mode, that takes you on a journey across hundreds of levels, each with its own unique challenges and rewards. Your decisions are matter, so choose wisely and unlock rewards that can be used
+              in online mode.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-img-section">
+      <img src="images/top-img.png" alt="" class="w-100">
+    </div>
+  </section>
+
+  <section class="online_wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 wow fadeInUp order-sm-2" data-wow-delay="0.3s">
+          <div class="border-p"><img src="images/demo-img.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-sm-6 desc order-sm-1">
+          <h3 class="title wow fadeInUp" data-wow-delay="0.3s">ONLINE</h3>
+          <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+          <div class=" wow fadeInUp" data-wow-delay="0.5s">
+            <p>Test your skills against real players in Online mode: join with or against other warriors of similar ranks and solve some of the toughest dungeons! Earn Dragon Scales or Orbs that you can spend on goodies, Vault Items of different rarities
+              that you can trade, sell or just flex about. Climb the skill ladder to unlock amazing and sometimes one-of-a-kind rewards! Join the <a href="">DragonShift</a> community to stay in touch or follow us on <a href="">Twitter</a> to be the first
+              to find out about giveaways and new content.</p>
+          </div>
         </div>
 
-        <script type="text/javascript">
-            var b = document.getElementById('webgl-play-button');
-            b.onclick = function() {
-                b.style.visibility = "hidden";
-                var webglIFrame = document.getElementById('webgl-iframe')
-                webglIFrame.src = "https://stage1-webgl.dragonshift.com";
-            };
-        </script>
+      </div>
+    </div>
+  </section>
+
+  <section class="training_wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="border-p"><img src="images/demo-img.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-sm-6 desc">
+          <h3 class="title wow fadeInUp" data-wow-delay="0.3s">TRAINING</h3>
+          <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+          <div class=" wow fadeInUp" data-wow-delay="0.5s">
+            <p>Want to have an edge over other players? Fine-tune your skills Training mode where you can explore any dungeon by yourself with no time limit and useful tips, and brew a mind-blowing strategy; or, even cooler, find exploits (before we fix
+              them!).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="claim_wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 wow fadeInUp order-sm-2" data-wow-delay="0.3s">
+          <div class="border-p"><img src="images/demo-img.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="col-sm-6 desc order-sm-1">
+          <h3 class="title wow fadeInUp" data-wow-delay="0.3s"> Beyond Realm
+          </h3>
+          <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+          <div class=" wow fadeInUp" data-wow-delay="0.5s">
+            <p>laim a piece of land while it’s still available in the Beyond Realm! Some lands host playable dungeons, and some don’t. Here’s where you come in: build your own dungeon using the <a href="">Editor</a> and be part of the DragonShift universe</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="bg_green_wrapper">
+    <div class="bottom-img-section">
+      <img src="images/bottom-img.png" alt="" class="w-100">
+    </div>
+    <div class="project_roadmap_wrapper">
+      <div class="container">
+        <div class="roadmap_box">
+          <div class="border-p">
+            <h3 class="title wow fadeInUp" data-wow-delay="0.3s">Project Roadmap</h3>
+            <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+            <div class="wow fadeInUp mt-48 pb-3" data-wow-delay="0.5s" style="
+                            overflow-x: scroll;scroll-snap-align: center;">
+              <img src="images/road-map.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how_can_help_wrapper">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="border-p"><img src="images/demo-img.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="col-sm-6 desc">
+            <h3 class="title wow fadeInUp" data-wow-delay="0.3s"> How can you help? </h3>
+            <span class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/border-bottom.png" alt="" class="img-fluid"></span>
+            <div class=" wow fadeInUp" data-wow-delay="0.5s">
+              <p>Join us on the <a href="">Dev</a> discord and be closer than ever to the development process, join our scheduled play sessions, help us build more dungeons, and, of course, bring your friends to the game!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
+    <div class="top-img-section">
+      <img src="images/top-img.png" alt="" class="w-100">
+    </div>
+  </section>
+  <section>
+    <img src="images/bg-black.png" alt="" class="img-fluid">
+  </section>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      });
+      wow.init();
+    });
+  </script>
 </body>
 
 </html>
