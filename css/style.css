@@ -310,11 +310,15 @@ section,
 }
 
 .banner_wrapper .carousel-caption {
-  bottom: 13.25rem;
+  bottom: 9.25rem;
+  z-index: 10;
+  /* bottom: 13.25rem; */
 }
 
 .banner_wrapper .carousel-indicators {
-  bottom: 130px;
+  bottom: 110px;
+  display: none;
+  /* bottom: 130px; */
 }
 
 .primary_button {
@@ -506,4 +510,31 @@ h3.title {
 
 ::-webkit-scrollbar-thumb {
   background-color: #201f1f;
+}
+/* 
+.img-fluid {
+  width: -webkit-fill-available;
+} */
+
+.main-logo{
+  background-image: url(../images/dragonshift_logo.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 6vw;
+  z-index: 9;
+  height: 41vw;
+  width: 55%;
+}
+
+.footer-logo {
+  background-image: url(../images/logo_hgg.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9;
+  height: 14vw;
+  width: 45%;
+  bottom: 3rem;
+  left: 4vw;
 }
