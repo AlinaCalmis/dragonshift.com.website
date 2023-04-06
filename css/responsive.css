@@ -1,0 +1,154 @@
+@media (min-width: 1900px) {
+    .banner_wrapper .carousel-caption {
+        bottom: 23.25rem;
+    }
+    .banner_wrapper .carousel-indicators {
+        bottom: 270px;
+    }
+    .adventure_wrapper {
+        padding: 186px 0 272px;
+    }
+    .project_roadmap_wrapper{
+        background-repeat: repeat-x;
+    background-size: contain;
+    }
+    .how_can_help_wrapper {
+        padding: 80px 0 120px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    body{
+        word-wrap: break-word;
+    }
+    .container, .container-sm{
+        max-width: 94% !important;
+    }
+    .right_menu_sticky ul, .left_menu_sticky ul{
+        gap: 50px;
+    }
+   
+}
+@media (max-width: 991.98px) {
+    .right_menu_sticky,.left_menu_sticky{
+        top: 92px;
+        font-size: 18px;
+    }
+    .right_menu_sticky ul, .left_menu_sticky ul {
+        gap: 38px;
+    }
+    .left_menu_sticky svg,.right_menu_sticky svg{
+        width: 18px;
+    }
+    h3.title {
+        font-size: 42px;
+        line-height: 58px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767.98px) {
+    .right_menu_sticky, .left_menu_sticky{
+        padding: 15px 10px;
+        top: 55px;
+    }
+    .right_menu_sticky ul, .left_menu_sticky ul {
+        gap: 20px;
+    }
+    .banner_wrapper .carousel-caption {
+        bottom: 7.25rem;
+    }
+    .banner_wrapper .carousel-indicators {
+        bottom: 65px;
+    }
+    .primary_button{
+        padding: 10px 28px;
+    }
+    h3.title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+    .desc p {
+        font-size: 18px;
+        line-height: 135%;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 575.99px) {
+    
+}
+@media (max-width: 480.99px) {
+    .banner_wrapper .carousel-caption {
+        bottom: 4.25rem;
+    }
+    .banner_wrapper .carousel-indicators {
+        bottom: 30px;
+    }
+    .banner_wrapper .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+    }
+    h3.title{
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .adventure_wrapper{
+       padding: 80px 0 100px
+    }
+    .training_wrapper {
+        padding: 100px 0 60px;
+    }
+    .roadmap_box .border-p {
+        padding: 12px 0;
+    }
+    .roadmap_box {
+        padding: 4px;
+    }
+    .project_roadmap_wrapper{
+        padding: 70px 0;
+    }
+    .bg_green_wrapper{
+        padding: 80px 0;
+    }
+    .desc p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .desc span .img-fluid, .roadmap_box span .img-fluid{
+        width: 50%;
+    }
+    .right_menu_sticky, .left_menu_sticky {
+        padding: 9px 6px;
+        top: 47px;
+    }
+    .right_menu_sticky, .left_menu_sticky {
+        font-size: 16px;
+    }
+    .left_menu_sticky svg, .right_menu_sticky svg {
+        width: 16px;
+    }
+}
+@media (max-width: 399.99px) {}
+@media (max-width: 374.99px) {
+    .primary_button{
+        font-size: 14px;
+        padding: 6px 20px;
+    }
+    .banner_wrapper .carousel-caption {
+        bottom: 3.0rem;
+    }
+    .banner_wrapper .carousel-indicators {
+        bottom: 20px;
+    }
+    .online_wrapper{
+        padding: 50px 0 10px;
+    }
+    .claim_wrapper {
+        padding: 55px 0;
+    }
+    .how_can_help_wrapper{
+        padding: 50px 0;
+    }
+}
+@media (max-width: 3.99px) {}
