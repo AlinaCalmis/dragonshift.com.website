@@ -45,6 +45,9 @@
         line-height: 58px;
         margin-bottom: 15px;
     }
+    .banner_wrapper .carousel-caption {
+        bottom: 2.25rem;
+    }
 }
 @media (max-width: 767.98px) {
     .right_menu_sticky, .left_menu_sticky{
@@ -55,7 +58,7 @@
         gap: 20px;
     }
     .banner_wrapper .carousel-caption {
-        bottom: 7.25rem;
+        bottom: 2.25rem;
     }
     .banner_wrapper .carousel-indicators {
         bottom: 65px;
@@ -79,7 +82,7 @@
 }
 @media (max-width: 480.99px) {
     .banner_wrapper .carousel-caption {
-        bottom: 4.25rem;
+        bottom: 1.25rem;
     }
     .banner_wrapper .carousel-indicators {
         bottom: 30px;
@@ -136,7 +139,7 @@
         padding: 6px 20px;
     }
     .banner_wrapper .carousel-caption {
-        bottom: 3.0rem;
+        /* bottom: 3.0rem; */
     }
     .banner_wrapper .carousel-indicators {
         bottom: 20px;
